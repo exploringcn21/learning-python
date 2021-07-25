@@ -2,7 +2,8 @@ import json
 
 data = json.load(open("resources/data.json"))
 
-def get_meaning(w):    
+def get_meaning(w):
+    w = w.lower()    
     if w in data:
         return data[w]
     else:
