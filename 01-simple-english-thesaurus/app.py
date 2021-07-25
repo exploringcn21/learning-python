@@ -22,4 +22,10 @@ def get_meaning(w):
 
 
 word = input("Enter word: ")
-print(get_meaning(word))
+output = get_meaning(word)
+
+if type(output) == list:
+    for item in output:
+        print(item)
+else:
+    print(output)
